@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+/* 폰트 어그로 */
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SBAggroL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SBAggroM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.agree {width:100%; border: 1px solid #e6e6e6;}
+.agree > div {font-weight: 300; overflow: auto; height: 124px; padding: 24px 19px; font-size: 13px; color: #555; line-height: 16px;background-color: white;}
+.agree > p { height: 43px; background:#f8f8f8; border-top: 1px solid #e6e6e6; line-height: 43px; font-size: 13px; color: #222; text-indent: 19px;}
+
+body {
+   font-family: 'SBAggroL';
+   font-size: var(--bs-body-font-size);
+   font-weight: var(--bs-body-font-weight);
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #f4623a;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.main {
+    padding: 0px 10px;
+}
+.login-form{
+	margin-top :15px; 
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 50%; 
+    }
+
+    .sidenav{
+        width: 30%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 70%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+        margin-bottom: 50px;
+    }
+}
+
+#page-logo{
+	text-align: center !important;
+}
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 40px;
+    color: black;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+    color: white;
+}
+
+.btn-black{
+    background-color: #212529;
+}
+.btn-gray{
+    background-color: #707274;
+    color: #fff !important;
+}
+.btn-secondary{
+	background-color: #f4623a;
+    color: #fff;
+    border-color: #21252961 !important;
+}
+.btn-secondary:hover{
+	background-color: #f1623a;
+}
+#mail_auth_input false{
+    background-color:#ebebe4;
+}
+ 
+#mail_auth_input true{
+    background-color:white;
+}
+
+.search-id-box{
+	width: 100%;
+	background-color: #e9ecef;
+    text-align: center;	
+}
+
+/* 클래스속성 코드. 인증번호의 일치 여부에 따라 span태그의 색 변경시 사용 */
+.correct{
+    color : green;
+}
+.incorrect{
+    color : red;
+}
+
+.valid-msg{
+	color:red;
+}
+
+#userId_possible{
+		color : green;
+		display : none;
+}
+	
+#userId_impossible{
+		color : red;
+		display : none;
+}
+#nickName_possible{
+		color : green;
+		display : none;
+}
+
+#nickName_impossible{
+		color : red;
+		display : none;
+}
+#password_possible{
+		color : green;
+		display : none;
+}
+
+#password_impossible{
+		color : red;
+		display : none;
+}
+#password_accord{
+		color : green;
+		display : none;
+}
+
+#password_discord{
+		color : red;
+		display : none;
+}
+
+.empty {
+	height: 300px;
+
+}
