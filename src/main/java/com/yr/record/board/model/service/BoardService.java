@@ -11,5 +11,7 @@ public interface BoardService {
 	void insertBoard(List<MultipartFile> mfs, Board board);
 
 	List<Board> boardList();
+	
+	Map<String, Object> selectBoardByIdx(String boardIdx);
 
 }

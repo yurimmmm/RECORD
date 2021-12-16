@@ -42,6 +42,11 @@ public class BoardServiceImpl implements BoardService{
 		
 	}
 
+	public Map<String, Object> selectBoardByIdx(String boardIdx) {
+		Board board = boardRepository.selectBoardByIdx(boardIdx);
+		List<FileDTO> files = boardRepository.selectFilesByBdIdx(boardIdx);
+		return Map.of("board",board,"files",files);
+	}
 	
 	
 	

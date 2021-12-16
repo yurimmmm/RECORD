@@ -51,7 +51,11 @@ public class BoardController {
 		return "/board/board-list";
 	}
 	
-	
+	@GetMapping("board-detail")
+	public void boardDetail(String boardIdx, Model model) {
+		Map<String,Object> commandMap = boardService.selectBoardByIdx(boardIdx);
+		model.addAttribute("datas", commandMap);
+	}
 	
 	
 	

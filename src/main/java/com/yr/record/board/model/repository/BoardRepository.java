@@ -23,5 +23,11 @@ public interface BoardRepository {
 
 	@Select("select board_idx, title, nickname, reg_date, viewcnt from board order by board_idx desc")
 	List<Board> boardList();
+	
+	@Select("select * from board where board_idx = #{boardIdx}")
+	Board selectBoardByIdx(String boardIdx);
+	
+	@Select("select * from file_info where type_idx = #{boardIdx}")
+	List<FileDTO> selectFilesByBdIdx(String boardIdx);
 
 }
