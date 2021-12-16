@@ -32,9 +32,9 @@ Logger logger =  LoggerFactory.getLogger(this.getClass());
 	public MemberController(MemberService memberService) {
 		super();
 		this.memberService = memberService;
-
+ 
 	}
-
+ 
 	@GetMapping("login")
 	public void login() {}
 	

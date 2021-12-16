@@ -41,7 +41,7 @@ public class BoardController {
 		//System.out.println("진입전 : " + board);
 		boardService.insertBoard(files, board);
 		//System.out.println("진입후 : " + board);
-		return "redirect:/";
+		return "redirect:/board/board-list";
 	}
 	
 	@GetMapping("board-list")
