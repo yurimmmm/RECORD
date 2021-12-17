@@ -47,6 +47,10 @@ public class BoardServiceImpl implements BoardService{
 		List<FileDTO> files = boardRepository.selectFilesByBdIdx(boardIdx);
 		return Map.of("board",board,"files",files);
 	}
+
+	public Board boardDetail(int boardIdx) {
+		return boardRepository.boardDetail(boardIdx);
+	}
 	
 	
 	

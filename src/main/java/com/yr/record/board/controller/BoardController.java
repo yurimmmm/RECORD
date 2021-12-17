@@ -3,6 +3,8 @@ package com.yr.record.board.controller;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpSession;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.yr.record.board.model.dto.Board;
 import com.yr.record.board.model.service.BoardService;
@@ -52,10 +55,26 @@ public class BoardController {
 	}
 	
 	@GetMapping("board-detail")
-	public void boardDetail(String boardIdx, Model model) {
-		Map<String,Object> commandMap = boardService.selectBoardByIdx(boardIdx);
-		model.addAttribute("datas", commandMap);
+	public void boardDetail(@RequestParam("boardIdx") int boardIdx, Model model) {		
+		Board board = boardService.boardDetail(boardIdx);
+		model.addAttribute("detail",board);		
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	 * @GetMapping("board-detail") public void boardDetail(String boardIdx, Model
+	 * model) { Map<String,Object> commandMap =
+	 * boardService.selectBoardByIdx(boardIdx); model.addAttribute("datas",
+	 * commandMap); }
+	 */
 	
 	
 	

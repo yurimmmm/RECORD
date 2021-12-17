@@ -47,7 +47,7 @@
 								<c:forEach items="${list}" var = "list">
 							<tr class="row100 body">
 								<td class="column1"><c:out value="${list.boardIdx}" /></td>
-								<td class="column2"><c:out value="${list.title}" /></td>
+								<td class="column2"><a href="/board/board-detail?boardIdx=${list.boardIdx}"><c:out value="${list.title}" /></a></td>
 								<td class="column3"><c:out value="${list.nickname}" /></td>
 								<td class="column4"><fmt:formatDate value="${list.regDate}" pattern="yyyy-MM-dd"/></td>
 							</tr>

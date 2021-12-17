@@ -182,7 +182,7 @@ th, td {
 
 .column1 {
   width: 10%;
-  padding-left: 40px;
+  padding-left: 10px;
   text-align: center;
 }
 
@@ -288,11 +288,20 @@ th, td {
   background-color: #cccccc;
 }
 
-.uplode{
+.uplode, .back{
 	color: white;
     background-color: #f4623a;
     width: 100%;
     text-align: center;
     height: 50px;
     font-size: 1.2em;
+}
+
+#detailWriter{
+	text-align: right;
+}
+
+#detailContent{
+	height: 300px;
+	width: 80%;	
 }

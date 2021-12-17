@@ -30,4 +30,9 @@ public interface BoardRepository {
 	@Select("select * from file_info where type_idx = #{boardIdx}")
 	List<FileDTO> selectFilesByBdIdx(String boardIdx);
 
+	@Select("select board_idx, title, nickname, reg_date, content from board where board_idx = #{boardIdx}")
+	Board boardDetail(int boardIdx);
+	
+	
+
 }
