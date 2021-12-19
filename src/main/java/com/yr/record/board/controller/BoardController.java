@@ -60,21 +60,35 @@ public class BoardController {
 		model.addAttribute("detail",board);		
 	}
 	
+	@GetMapping("board-modify")
+	public void boardModify(@RequestParam("boardIdx") int boardIdx, Model model) {
+		
+		System.out.println("boardIdx : " + boardIdx);
+		
+		Board board = boardService.boardDetail(boardIdx);
+		model.addAttribute("modify",board);	
+	}
+	
+	@GetMapping("board-delete")
+	public void boardDelete(@RequestParam("boardIdx") int boardIdx, Model model) {
+		model.addAttribute("delete",boardIdx);	
+	}
+	
+	@PostMapping("board-modify")
+	 public String boardModify(Board board){	
+		boardService.boardModify(board);
+	  
+	  return "redirect:/board/board-list";	  
+	 }
+
+	@PostMapping("board-delete")
+	 public String boardDelete(@RequestParam("boardIdx") int boardIdx){	 
+		boardService.boardDelete(boardIdx);
+		
+	  return "redirect:/board/board-list";
+	 }
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	/*
-	 * @GetMapping("board-detail") public void boardDetail(String boardIdx, Model
-	 * model) { Map<String,Object> commandMap =
-	 * boardService.selectBoardByIdx(boardIdx); model.addAttribute("datas",
-	 * commandMap); }
-	 */
 	
 	
 	

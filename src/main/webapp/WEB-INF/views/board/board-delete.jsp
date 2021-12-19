@@ -61,7 +61,7 @@
 					<p>
 						<button class="modify_btn">수정</button>
 						<button class="delete_btn">삭제</button>
-					</p>					
+					</p>
 				  </form>
 				  <button class="back" onclick="history.back()">게시물 목록으로 돌아가기</button>
 				</div>
@@ -75,7 +75,7 @@
  var formObj = $("form[role='form']");
  
  // 수정 버튼 클릭
- $(".modity_btn").click(function(){
+ $("#modity_btn").click(function(){
   
   formObj.attr("action", "/board/board-modify");
   formObj.attr("method", "get");  
@@ -85,7 +85,7 @@
  
  
  // 삭제 버튼 클릭
- $(".delete_btn").click(function(){
+ $("#delete_btn").click(function(){
   
   formObj.attr("action", "/board/board-delete");
   formObj.attr("method", "get");  

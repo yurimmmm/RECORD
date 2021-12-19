@@ -19,5 +19,9 @@ public interface BoardService {
 
 	Board boardDetail(int boardIdx);
 
+	int boardModify(Board board);
+
+	void boardDelete(int boardIdx);
+
 
 }

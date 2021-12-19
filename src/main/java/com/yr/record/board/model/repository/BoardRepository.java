@@ -2,9 +2,11 @@ package com.yr.record.board.model.repository;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import com.yr.record.board.model.dto.Board;
 import com.yr.record.common.util.FileDTO;
@@ -32,7 +34,12 @@ public interface BoardRepository {
 
 	@Select("select board_idx, title, nickname, reg_date, content from board where board_idx = #{boardIdx}")
 	Board boardDetail(int boardIdx);
-	
-	
 
+	@Update("update board set title=#{title}, content=#{content} where board_idx = #{boardIdx}")
+	int boardModify(Board board);
+
+	@Delete("delete from board where board_idx = #{boardIdx}")
+	void boardDelete(int boardIdx);
+		
+	
 }

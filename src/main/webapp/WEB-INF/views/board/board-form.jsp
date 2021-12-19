@@ -43,10 +43,10 @@
 						<table>
 							<tbody>
 								<tr class="row100 body">
-									<td><textarea class="textarea" name="content" required="required"></textarea></td>
+									<td><input type="file" name="files" id="contract_file" multiple/></td>
 								</tr>
 								<tr class="row100 body">
-									<td><input type="file" name="files" id="contract_file" multiple/></td>
+									<td><textarea class="textarea" name="content" required="required"></textarea></td>
 								</tr>
 							</tbody>
 						</table>

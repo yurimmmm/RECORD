@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="/resources/css/board/util.css">
 	<link rel="stylesheet" href="/resources/css/board/main.css">
 <!--===============================================================================================-->
+<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
 </head>
 <body>	
 <%@ include file="/WEB-INF/views/include/nav.jsp" %>
