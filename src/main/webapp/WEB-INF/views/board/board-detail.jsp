@@ -21,7 +21,28 @@
 	<link rel="stylesheet" href="/resources/css/board/util.css">
 	<link rel="stylesheet" href="/resources/css/board/main.css">
 <!--===============================================================================================-->
+<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
 </head>
+<script type="text/javascript">
+		$(document).ready(function(){
+			var formObj = $("form[name='readForm']");
+			
+			// 수정 
+			$(".update_btn").on("click", function(){
+				formObj.attr("action", "/board/board-modify");
+				formObj.attr("method", "get");
+				formObj.submit();				
+			})
+			
+			// 삭제
+			$(".delete_btn").on("click", function(){
+				formObj.attr("action", "/board/board-delete");
+				formObj.attr("method", "post");
+				formObj.submit();
+			})
+			
+		})
+</script>
 <body>
 <%@ include file="/WEB-INF/views/include/nav.jsp" %>
 
@@ -29,8 +50,10 @@
 		<div class="container-table100">
 			<div class="wrap-table100">
 				<div class="table100 ver2 m-b-110">
-				<form role="form">
 					<div class="table100-head">
+						<form name="readForm" role="form" method="post">
+							<input type="hidden" id="boardIdx" name="boardIdx" value="${detail.boardIdx}" />
+						</form>
 						<table>
 							<thead>
 								<tr class="row100 head">
@@ -46,89 +69,21 @@
 								<tr class="row100 body" id="detailWriter">
 									<td>작성자  :  ${detail.nickname}</td>
 								</tr>
-<%-- 								<tr class="row100 body" style="display: flex">
-									<c:forEach items="${files}" var="file">
-										<img src="${file.downloadURL }"
-											style="max-width: 360px; max-height: 273px">
-									</c:forEach>
-								</tr> --%>
 								<tr class="row100 body" id="detailContent">
 									<td style="padding-left: 40px;">${detail.content}</td>
 								</tr>								
 							</tbody>
 						</table>
 					</div>
-					<p>
-						<button class="modify_btn">수정</button>
-						<button class="delete_btn">삭제</button>
-					</p>					
-				  </form>
+					<div>
+						<button type="submit" class="update_btn">수정</button>
+						<button type="submit" class="delete_btn">삭제</button>
+					</div>					
 				  <button class="back" onclick="history.back()">게시물 목록으로 돌아가기</button>
 				</div>
 			</div>
 		</div>
 	</div>
-
-<script>
- 
- // 폼을 변수에 저장
- var formObj = $("form[role='form']");
- 
- // 수정 버튼 클릭
- $(".modity_btn").click(function(){
-  
-  formObj.attr("action", "/board/board-modify");
-  formObj.attr("method", "get");  
-  formObj.submit();     
-  
- });
- 
- 
- // 삭제 버튼 클릭
- $(".delete_btn").click(function(){
-  
-  formObj.attr("action", "/board/board-delete");
-  formObj.attr("method", "get");  
-  formObj.submit();
-  
- });
- </script>
-
-
-
-<%-- <div class="content">
-
-	<h2 class='tit'>게시판</h2>
-	<div class='info'>
-		<span>번호 :   <c:out value="${datas.board.boardIdx}"/></span>
-		<span>제목 :   <c:out value="${datas.board.title}"/></span>
-		<span>등록일 : <c:out value="${datas.board.regDate}"/></span>
-		<span>작성자 : <c:out value="${datas.board.userId}"/></span>
-	</div>
-	<div class='info file_info'>
-		<ol>
-			<c:forEach items="${datas.files}" var="file">
-				<li><a onclick="downloadFile('${file.originFileName}','${file.renameFileName}','${file.savePath}')">
-						${file.originFileName}</a></li>		
-			</c:forEach>
-		</ol>
-	</div>
-	
-	<div class='article_content'>
-		<pre><c:out value="${datas.board.content}"/></pre>
-	</div>
-
-</div>
-	<script type="text/javascript">
-		let downloadFile = (ofn,rfn,path) => {
-			let paramObj = {
-					originFileName : ofn,
-					renameFileName : rfn,
-					savePath : path
-			}
-			location.href = '/download?' + urlEncoder(paramObj);
-		}
-	</script> --%>
 </body>
 <%@ include file="/WEB-INF/views/include/footer.jsp" %>
 </html>

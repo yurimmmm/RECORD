@@ -52,8 +52,8 @@ public class BoardServiceImpl implements BoardService{
 		return boardRepository.boardDetail(boardIdx);
 	}
 
-	public int boardModify(Board board) {
-		return boardRepository.boardModify(board);
+	public void boardModify(Board board) {
+		boardRepository.boardModify(board);
 	}
 
 	public void boardDelete(int boardIdx) {

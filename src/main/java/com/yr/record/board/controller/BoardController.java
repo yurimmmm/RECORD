@@ -61,19 +61,11 @@ public class BoardController {
 	}
 	
 	@GetMapping("board-modify")
-	public void boardModify(@RequestParam("boardIdx") int boardIdx, Model model) {
-		
-		System.out.println("boardIdx : " + boardIdx);
-		
-		Board board = boardService.boardDetail(boardIdx);
-		model.addAttribute("modify",board);	
+	public String boardModify(Board board, Model model) {	
+		model.addAttribute("modify",boardService.boardDetail(board.getBoardIdx()));
+		return "board/board-modify";	
 	}
-	
-	@GetMapping("board-delete")
-	public void boardDelete(@RequestParam("boardIdx") int boardIdx, Model model) {
-		model.addAttribute("delete",boardIdx);	
-	}
-	
+		
 	@PostMapping("board-modify")
 	 public String boardModify(Board board){	
 		boardService.boardModify(board);
@@ -82,9 +74,8 @@ public class BoardController {
 	 }
 
 	@PostMapping("board-delete")
-	 public String boardDelete(@RequestParam("boardIdx") int boardIdx){	 
-		boardService.boardDelete(boardIdx);
-		
+	 public String boardDelete(Board board){	 
+		boardService.boardDelete(board.getBoardIdx());
 	  return "redirect:/board/board-list";
 	 }
 	

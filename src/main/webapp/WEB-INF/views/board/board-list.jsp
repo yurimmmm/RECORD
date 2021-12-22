@@ -30,7 +30,7 @@
 		<div class="container-table100">
 			<div class="wrap-table100">
 				<div class="table100 ver2 m-b-110">
-					<div class="table100-head">
+					<div class="table100-head">											
 						<table>
 							<thead>
 								<tr class="row100 head">
@@ -72,17 +72,16 @@
 	<script src="/resources/vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
 	<script src="/resources/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-	<script>
+<script>
 		$('.js-pscroll').each(function(){
 			var ps = new PerfectScrollbar(this);
 
 			$(window).on('resize', function(){
 				ps.update();
 			})
-		});
-					
-	</script>
-	<script src="/resources/js/board/main.js"></script>
+		});					
+</script>
+<script src="/resources/js/board/main.js"></script>
 </body>
 <%@ include file="/WEB-INF/views/include/footer.jsp" %>
 </html>
