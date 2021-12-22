@@ -75,10 +75,10 @@
 							</tbody>
 						</table>
 					</div>
-					<div>
-						<button type="submit" class="update_btn">수정</button>
-						<button type="submit" class="delete_btn">삭제</button>
-					</div>					
+					<div class="modify">
+						<button type="submit" class="update_btn">수정　　/</button>
+						<button type="submit" class="delete_btn">　　삭제</button>
+					</div>	
 				  <button class="back" onclick="history.back()">게시물 목록으로 돌아가기</button>
 				</div>
 			</div>

@@ -35,8 +35,8 @@
 				  </c:if><br>
                   <button class="btn btn-secondary">로그인</button>
                   <a class="btn btn-gray"  href='/member/join'>회원가입</a><br><br>
-                  <a href='/member/search-id' style="color: gray">아이디 찾기  |  </a>
-                  <a href='/member/search-pw' style="color: gray">비밀번호 찾기</a><br><hr class="divider" />
+                  <a href='/member/search-id' style="color: gray">아이디 찾기　|</a>
+                  <a href='/member/search-pw' style="color: gray">　비밀번호 찾기</a><br><hr class="divider" />
                   <a href="javascript:kakaoLogin()"><img src="/resources/img/kakao_login.png" width="100%"></a>
                </form>
             </div>

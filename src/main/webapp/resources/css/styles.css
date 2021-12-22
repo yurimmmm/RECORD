@@ -1386,7 +1386,7 @@ progress {
 
   .col-lg-3 {
     flex: 0 0 auto;
-    width: 25%;
+    width: 100%;
   }
 
   .col-lg-4 {
@@ -7784,7 +7784,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #ffffff !important
+  color: black !important;
 }
 
 .text-black-50 {

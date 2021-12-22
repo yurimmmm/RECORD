@@ -148,7 +148,7 @@ a[x-apple-data-detectors='true'] {
   <tr>
     <td style="padding-right: 0px;padding-left: 0px;" align="center">
       
-      <img src="https://postfiles.pstatic.net/MjAyMTEyMDFfMjEy/MDAxNjM4MzYxNTkzMzk0.k7cEVVfjXt1abZAFgWZOiq8-GImXwRsUtCdLhM80mdEg.WR8EJvKVuy7veQByWnbUZK-ZszHpzLUrVNWYi_p5ZYMg.PNG.lyrmt0320/site-logo.png?type=w773" width="327"/>
+      <img src="https://postfiles.pstatic.net/MjAyMTEyMjJfMTgy/MDAxNjQwMTgzNDA1MTcz.IGo8s7hV5aMxStOsvdwnPeekgZwBfTtwad64w9h1xscg.FC-T42lmhSGyvIXAgx24VHbMEvYOp85dvJzf55RWotMg.PNG.lyrmt0320/redord-logo.PNG?type=w773" width="327"/>
       
     </td>
   </tr>
@@ -204,52 +204,7 @@ a[x-apple-data-detectors='true'] {
   <tbody>
     <tr>
       <td style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;" align="left">
-        
-<div class="menu" style="text-align:center">
-<!--[if (mso)|(IE)]><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><![endif]-->
-
-  <!--[if (mso)|(IE)]><td style="padding:4px 15px"><![endif]-->
-  
-  <span style="padding:4px 15px;display:inline-block;color:#ffffff;font-family:'Raleway',sans-serif;font-size:15px">
-    PET CARE
-  </span>
-  
-  <!--[if (mso)|(IE)]></td><![endif]-->
-  
-    <!--[if (mso)|(IE)]><td style="padding:4px 15px"><![endif]-->
-    <span style="padding:4px 15px;display:inline-block;color:#ffffff;font-family:'Raleway',sans-serif;font-size:15px" class="hide-mobile">
-      |
-    </span>
-    <!--[if (mso)|(IE)]></td><![endif]-->
-  
-
-  <!--[if (mso)|(IE)]><td style="padding:4px 15px"><![endif]-->
-  
-  <span style="padding:4px 15px;display:inline-block;color:#ffffff;font-family:'Raleway',sans-serif;font-size:15px">
-    PET SERVICES
-  </span>
-  
-  <!--[if (mso)|(IE)]></td><![endif]-->
-  
-    <!--[if (mso)|(IE)]><td style="padding:4px 15px"><![endif]-->
-    <span style="padding:4px 15px;display:inline-block;color:#ffffff;font-family:'Raleway',sans-serif;font-size:15px" class="hide-mobile">
-      |
-    </span>
-    <!--[if (mso)|(IE)]></td><![endif]-->
-  
-
-  <!--[if (mso)|(IE)]><td style="padding:4px 15px"><![endif]-->
-  
-  <span style="padding:4px 15px;display:inline-block;color:#ffffff;font-family:'Raleway',sans-serif;font-size:15px">
-    SHOP BY PET
-  </span>
-  
-  <!--[if (mso)|(IE)]></td><![endif]-->
-  
-
-<!--[if (mso)|(IE)]></tr></table><![endif]-->
-</div>
-
+     
       </td>
     </tr>
   </tbody>
@@ -297,11 +252,6 @@ a[x-apple-data-detectors='true'] {
         
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr>
-    <td style="padding-right: 0px;padding-left: 0px;" align="center">
-      
-      <img align="center" border="0" src="https://postfiles.pstatic.net/MjAyMTEyMDFfMjY0/MDAxNjM4MzYxNTg3NjI0.tq7cfiAZ2yH8BlxOSFuQYiThmYe48KDZ60O6O6eqXoIg.o-gkUOMFy9wReUr197iYdakcVJRK1AF1b1Vh36JUWFcg.PNG.lyrmt0320/KakaoTalk_20211102_203157614.png?type=w773" alt="Image" title="Image" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 100%;max-width: 217px;" width="217"/>
-      
-    </td>
   </tr>
 </table>
 
@@ -316,7 +266,7 @@ a[x-apple-data-detectors='true'] {
       <td style="overflow-wrap:break-word;word-break:break-word;padding:30px 40px 10px;font-family:arial,helvetica,sans-serif;" align="left">
         
   <div style="line-height: 140%; text-align: left; word-wrap: break-word;">
-    <p style="line-height: 140%; text-align: center; font-size: 14px;"><span style="font-family: Lato, sans-serif;"><span style="font-size: 16px; line-height: 22.4px;">똑DOG한 집사들의 회원이 되신걸 환영합니다.</span></span></p>
+    <p style="line-height: 140%; text-align: center; font-size: 14px;"><span style="font-family: Lato, sans-serif;"><span style="font-size: 16px; line-height: 22.4px;">RECORD의 회원이 되신걸 환영합니다.</span></span></p>
   </div>
 
       </td>

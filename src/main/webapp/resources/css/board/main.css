@@ -305,3 +305,12 @@ th, td {
 	height: 300px;
 	width: 80%;	
 }
+.title{
+	color: inherit; /* 링크의 색상 제거 */
+}
+.modify{
+	text-align: right !important;
+}
+.update_btn ,.delete_btn{
+	color: #808080 !important;
+}
